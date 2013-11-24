@@ -711,6 +711,46 @@
         cancelInterval(this.interval);
         this.interval = null;
       }
+    },
+    icon: function(name) {
+      var iconFunction;
+
+      switch(name) {
+        case 'clear-day':
+          iconFunction = Skycons.CLEAR_DAY;
+          break;
+        case 'clear-night':
+          iconFunction = Skycons.CLEAR_NIGHT;
+          break;
+        case 'rain':
+          iconFunction = Skycons.RAIN;
+          break;
+        case 'snow':
+          iconFunction = Skycons.SNOW;
+          break;
+        case 'sleet':
+          iconFunction = Skycons.SLEET;
+          break;
+        case 'wind':
+          iconFunction = Skycons.WIND;
+          break;
+        case 'fog':
+          iconFunction = Skycons.FOG;
+          break;
+        case 'cloudy':
+          iconFunction = Skycons.CLOUDY;
+          break;
+        case 'partly-cloudy-day':
+          iconFunction = Skycons.PARTLY_CLOUDY_DAY;
+          break;
+        case 'partly-cloudy-night':
+          iconFunction = Skycons.PARTLY_CLOUDY_NIGHT;
+          break;
+        default:
+          iconFunction = Skycons.CLEAR_DAY;
+          break;
+      }
+      return iconFunction;
     }
   };
 
